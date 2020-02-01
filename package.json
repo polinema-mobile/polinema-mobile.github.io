@@ -16,9 +16,9 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "canvas": "^2.6.1",
     "gitbook": "git+https://github.com/dhanifudin/gitbook.git",
-    "gitbook-cli": "^2.3.2",
-    "gitbook-plugin-autocover": "git+https://github.com/dhanifudin/plugin-autocover.git"
+    "gitbook-cli": "^2.3.2"
   },
   "bugs": {
     "url": "https://github.com/polinema-mobile/polinema-mobile.github.io/issues"

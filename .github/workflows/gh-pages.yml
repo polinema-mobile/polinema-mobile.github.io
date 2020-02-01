@@ -6,7 +6,7 @@ on:
       - develop
 
 env:
-  NODE_VERSION: '10.x'
+  NODE_VERSION: '12.x'
 
 jobs:
   build-deploy:
@@ -24,7 +24,7 @@ jobs:
 
       - name: Build GitHub Pages
         run: |
-          npm ci
+          npm install
           npm run build
 
       - name: Deploy GitHub Pages

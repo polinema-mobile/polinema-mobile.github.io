@@ -1,7 +1,6 @@
 {
   "title": "Modul Pemrograman Mobile",
   "author": "Tim Pengajar Pemrograman Mobile",
-  "language": "id",
-  "plugins": ["autocover"]
+  "language": "id"
 }
 
