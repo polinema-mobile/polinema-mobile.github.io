@@ -3,7 +3,7 @@
 - [Pemrograman Mobile](README.md)
 - [1. Persiapan Android](01/00-pendahuluan.md)
   - [Android](01/01-android.md)
-  - [Instalasi Git](01/02-instalasi-git.md)
+  - [Git](01/02-git.md)
   - [Install Java SDK](01/03-instalasi-java-sdk.md)
   - [Instalasi Android Studio](01/04-instalasi-android-studio.md)
   - [Instalasi Emulator Android](01/05-instalasi-emulator-android.md)
