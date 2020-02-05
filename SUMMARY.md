@@ -10,3 +10,8 @@
   - [Developer Options](01/06-developer-options.md)
   - [Hello Android](01/07-hello-android.md)
   - [Tugas](01/08-tugas.md)
+
+- [2. Pengenalan Android Studio](02/00-pendahuluan.md)
+  - [Tour Android Studio](02/01-tour-android-studio.md)
+  - [Struktur Folder Project](02/02-struktur-folder-project-android-studio.md)
+  - [Version Control](02/03-version-control.md)
