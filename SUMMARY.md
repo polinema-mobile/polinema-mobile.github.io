@@ -15,3 +15,4 @@
   - [Tour Android Studio](02/01-tour-android-studio.md)
   - [Struktur Folder Project](02/02-struktur-folder-project-android-studio.md)
   - [Version Control](02/03-version-control.md)
+  - [Tugas](02/04-tugas.md)
