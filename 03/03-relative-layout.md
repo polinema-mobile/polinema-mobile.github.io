@@ -39,7 +39,5 @@ Dengan konfigurasi properties seperti di atas, sebuah item akan diposisikan di s
 
 !['relativelayout'](images/02-relative-layout-button-baru.png)
 
-- Berdasarkan percobaan di atas cobalah membuat layout yang sebelumnya menggunakan _linear layout_ dengan _relative layout_.
-
 - Commit semua perubahan yang telah anda lakukan, kemudian push ke akun GitHub
   anda!
