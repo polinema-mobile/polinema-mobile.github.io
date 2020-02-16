@@ -51,3 +51,13 @@ startActivity(intent);
 ## Pertanyaan
 
 - Lengkapi `ExplicitIntentActivity` sehingga bisa mengambil nilai pada `EditText` kemudian menampilkannya pada `TextView`.
+
+> **Petunjuk**: buatlah dua buah atribut dengan nama `nameInput` dan `outputText`.
+
+> ```java
+> private EditText nameInput;
+> private TextView outputText;
+> ```
+
+> Dengan menggunakan method `findViewById()` simpan component ke dalam atribut di
+> atas.

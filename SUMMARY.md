@@ -26,3 +26,10 @@
   - [Constraint Layout](03/04-constraint-layout.md)
   - [Latihan Konversi Layout](03/05-latihan-konversi-layout-1.md)
   - [Latihan Konversi Layout 2](03/06-latihan-konversi-layout-2.md)
+
+- [Bab 4 - Intent](04/00-pendahuluan.md)
+  - [Intent](04/01-intent.md)
+  - [Explicit Intent](04/02-explicit-intent.md)
+  - [Implicit Intent](04/03-implicit-intent.md)
+  - [Android Bundle](04/04-bundle.md)
+  - [Parcelable](04/05-parcelable.md)

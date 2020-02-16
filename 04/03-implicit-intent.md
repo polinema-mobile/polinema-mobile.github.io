@@ -25,6 +25,12 @@ berikut.
 Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
 ```
 
+> **Catatan**: Pada praktikum ini digunakan library
+> [CircleImageView](https://github.com/hdodenhof/CircleImageView). Silahkan buka
+> file `build.gradle` (module) untuk melihat bagaimana cara menambahkan library
+> ini. Untuk referensi lebih lanjut silahkan buka dokumentasi library
+> [CircleImageView](https://github.com/hdodenhof/CircleImageView).
+
 ## Praktikum
 
 - Buka dan amati file `MainActivity.java` dan `activity_main.xml` dalam project
@@ -99,3 +105,8 @@ Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_
     }
   }
   ```
+
+## Referensi Tambahan
+
+Jika anda menginginkan opsi sehingga user dapat memilih apakah mengganti gambar
+yang bersumber dari gallery atau camera silahkan gunakan referensi [berikut](https://medium.com/@hasangi/capture-image-or-choose-from-gallery-photos-implementation-for-android-a5ca59bc6883).
