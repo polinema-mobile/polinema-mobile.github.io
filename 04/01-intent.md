@@ -70,6 +70,10 @@ public class MainActivity extends AppCompat {
 }
 ```
 
-> **Catatan**: Silahkan clone [Starter Code Mobile
-> 04](https://github.com/polinema-mobile/2019-mobile04) terlebih dahulu, sebelum
-> memulai praktikum.
+> **Catatan**: Silahkan fork kemudian clone [Starter Code
+> Intent](https://github.com/polinema-mobile/mobile-intent) terlebih dahulu,
+> sebelum memulai praktikum.
+
+> **Tips**: Anda juga bisa menggunakan menu **File** -> **Project from Verson Control**
+> -> **Git** dan masukkan url repository fork GitHub untuk membuat project baru
+> yang berasal dari repository GitHub.
