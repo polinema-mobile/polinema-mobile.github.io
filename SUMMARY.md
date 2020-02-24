@@ -20,6 +20,7 @@
   - [Tugas](02/04-tugas.md)
 
 - [3. Activity dan Desain Layout](03/00-pendahuluan.md)
+
   - [Android Activity Lifecycle](03/01-android-activity-lifecycle.md)
   - [Linear Layout](03/02-linier-layout.md)
   - [Relative Layout](03/03-relative-layout.md)
@@ -34,3 +35,5 @@
   - [Android Bundle](04/04-bundle.md)
   - [Parcelable](04/05-parcelable.md)
   - [Tugas](04/06-tugas.md)
+- [5. Latihan Intent](05/00-pendahuluan.md)
+  - [Latihan 1](05/01-latihan.md)
