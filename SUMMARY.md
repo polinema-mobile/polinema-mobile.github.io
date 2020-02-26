@@ -37,3 +37,4 @@
   - [Tugas](04/06-tugas.md)
 - [5. Latihan Intent](05/00-pendahuluan.md)
   - [Latihan 1](05/01-latihan.md)
+  - [Latihan 2](05/02-latihan.md)
