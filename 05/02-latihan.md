@@ -19,3 +19,10 @@
    5. Tombol Cek Result menghitung pemenang dari kedua tim dan mengirim nama pemenang beserta detail pencetak gol ke ResultActivity, jika seri di kirim text "Draw"
 6. Result Activity :
    1. Menampilkan pemenang dari pertandingan, data didapat dari MatchActivity
+
+
+> **Referensi**: Silahkan baca [referensi
+> berikut](https://stackoverflow.com/questions/920306/sending-data-back-to-the-main-activity-in-android)
+> untuk mengimplementasikan di atas. Gunakan method `startActivityForResult()`
+> untuk memanggil `Activity` dan gunakan method `setResult()` untuk mengirimkan
+> hasil kembali ke `Activity`.
