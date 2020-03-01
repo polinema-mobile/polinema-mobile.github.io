@@ -41,3 +41,4 @@
 
 - [6. RecyclerView](06/00-pendahuluan.md)
   - [Konsep RecyclerView](06/01-recyclerview.md)
+  - [RecyclerView Sederhana](06/02-recyclerview-sederhana.md)
