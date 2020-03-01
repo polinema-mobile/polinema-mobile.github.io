@@ -38,3 +38,6 @@
 - [5. Latihan Intent](05/00-pendahuluan.md)
   - [Latihan 1](05/01-latihan.md)
   - [Latihan 2](05/02-latihan.md)
+
+- [6. RecyclerView](06/00-pendahuluan.md)
+  - [Konsep RecyclerView](06/01-recyclerview.md)
