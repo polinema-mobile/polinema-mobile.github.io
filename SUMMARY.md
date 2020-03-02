@@ -44,3 +44,5 @@
   - [RecyclerView Sederhana](06/02-recyclerview-sederhana.md)
   - [Praktikum RecyclerView](06/03-praktikum-recyclerview.md)
   - [Grid RecyclerView](06/04-grid-recyclerview.md)
+  - [ViewType RecyclerView](06/05-viewtype-recyclerview.md)
+  - [Latihan](06/06-exercise.md)

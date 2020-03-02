@@ -2,7 +2,7 @@
 
 Silahkan amati layout tampilan yang diharapkan berikut.
 
-[Layout](./images/layout logo.jpeg)
+![Layout](./images/layout logo.jpeg)
 
 > **Catatan**: Untuk memberikan efek timbul pada layout digunakan `CardView`.
 > Gambar akan diambil dari internet menggunakan
