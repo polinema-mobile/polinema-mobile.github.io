@@ -43,3 +43,4 @@
   - [Konsep RecyclerView](06/01-recyclerview.md)
   - [RecyclerView Sederhana](06/02-recyclerview-sederhana.md)
   - [Praktikum RecyclerView](06/03-praktikum-recyclerview.md)
+  - [Grid RecyclerView](06/04-grid-recyclerview.md)
