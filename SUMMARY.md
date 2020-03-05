@@ -46,3 +46,4 @@
   - [Grid RecyclerView](06/04-grid-recyclerview.md)
   - [ViewType RecyclerView](06/05-viewtype-recyclerview.md)
   - [Latihan](06/06-exercise.md)
+  - [RecyclerView FastAdapter](06/07-recyclerview-fastadapter.md)
