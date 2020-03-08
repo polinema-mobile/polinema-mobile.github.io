@@ -52,3 +52,7 @@
   - [Aplikasi Kas](07/01-aplikasi.md)
   - [RecyclerView Adapter](07/02-recyclerview-adapter.md)
   - [SaveActivity](07/03-saveactivity.md)
+  - [MainActivity](07/04-mainactivity.md)
+  - [MainActivity Add](07/05-mainactivity-add.md)
+  - [MainActivity Update](07/06-mainactivity-update.md)
+  - [MainActivity Delete](07/07-mainactivity-delete.md)
