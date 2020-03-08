@@ -47,3 +47,5 @@
   - [ViewType RecyclerView](06/05-viewtype-recyclerview.md)
   - [Latihan](06/06-exercise.md)
   - [RecyclerView FastAdapter](06/07-recyclerview-fastadapter.md)
+
+- [7. Interaksi RecyclerView](07/00-pendahuluan.md)
