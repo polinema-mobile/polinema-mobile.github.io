@@ -13,3 +13,21 @@ penambahan data.
  intent.putExtra(TRANSACTION_KEY, new Transaction());
  startActivityForResult(intent, INSERT_REQUEST);
  ```
+
+- Proses pengisian data dilakukan dalam `SaveActivity` yang kemudian hasilnya
+ dikirimkan ke `MainActivity` melalui Intent. Untuk menerima hasil, silahkan
+ override method `onActivityResult()` dan tambahkan kode berikut.
+
+  ```java
+  if (resultCode == RESULT_OK) {
+      Transaction transaction = data.getParcelableExtra(TRANSACTION_KEY);
+      if (requestCode == INSERT_REQUEST) {
+          account.addTransaction(transaction);
+      }
+      adapter.notifyDataSetChanged();
+      welcomeText.setText(String.valueOf(account.getBalance()));
+  }
+  ```
+
+- Perhatikan method `adapter.notifyDataSetChanged()`, method ini memberitahukan
+ kepada `RecyclerView` bahwa telah terjadi perubahan data.
