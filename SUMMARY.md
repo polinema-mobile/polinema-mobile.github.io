@@ -56,3 +56,4 @@
   - [MainActivity Add](07/05-mainactivity-add.md)
   - [MainActivity Update](07/06-mainactivity-update.md)
   - [MainActivity Delete](07/07-mainactivity-delete.md)
+  - [Tugas](07/08-tugas.md)
