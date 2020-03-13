@@ -107,8 +107,8 @@ Silahkan ikuti langkah-langkah berikut untuk mengimplementasikan fitur login:
  method `onCreate()`.
 
   ```java
-  // binding komponen
 
+  // binding komponen
 
   session = Application.getSession();
   ```
