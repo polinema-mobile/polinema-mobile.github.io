@@ -19,6 +19,16 @@ Endpoint : https://mobile.putraprima.id/api/auth/
 }
 ```
 
+Model :
+
+```java
+class LoginRequest{
+    public String UserId, Password;
+    //constructor
+    //getter setter
+}
+```
+
 Login REST API response :
 
 ```json
@@ -47,7 +57,7 @@ ApiInterface :
 ```java
 Interface ApiInterface{
     @POST("/api/auth/")
-    Call<LoginResponse> login(String UserId,String Password);
+    Call<LoginResponse> login(@Body LoginRequest loginRequest);
 }
 
 ```
@@ -57,7 +67,7 @@ Activity :
 ```java
     private void login() {
         ApiInterface service = ServiceGenerator.createService(ApiInterface.class);
-        Call<LoginResponse> call = service.getAppVersion();
+        Call<LoginResponse> call = service.doLogin(loginRequest);
         call.enqueue(new Callback<LoginResponse>() {
             @Override
             public void onResponse(Call<LoginResponse> call, Response<LoginResponse> response) {
