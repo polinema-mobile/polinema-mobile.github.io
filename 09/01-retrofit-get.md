@@ -11,7 +11,7 @@ Berikut ini referensi yang dapat digunakan untuk mempelajari retrofit silahkan d
 
 ## Praktikum Get Data dari REST API
 
-Pada praktikum ini akan dipelajari mengai cara melakukan request GET ke suatu endpoint. Endpoint yang digunakan adalah : https://cctv.putraprima.id
+Pada praktikum ini akan dipelajari mengai cara melakukan request GET ke suatu endpoint. Endpoint yang digunakan adalah : https://mobile.putraprima.id
 
 > ** Catatan ** : Google menyaratkan semua server yang diakses oleh aplikasi android menggunakan protokol http yang secure (di enkripsi) maka server yang digunakan harus menggunakan https.
 
@@ -103,7 +103,7 @@ Package `ui` berisi activity yang digunakan pada aplikasi ini.
 ```java
 public class ServiceGenerator {
 
-    private static final String BASE_URL = "https://cctv.putraprima.id";
+    private static final String BASE_URL = "https://mobile.putraprima.id";
 
     private static Retrofit.Builder builder =
             new Retrofit.Builder()
@@ -166,7 +166,7 @@ public class AppVersion {
 }
 ```
 
-Kode program diatas adalah hasil mapping dari response json yang di request ke endpoint https://cctv.putraprima.id/, berikut ini raw json hasil requestnya :
+Kode program diatas adalah hasil mapping dari response json yang di request ke endpoint https://mobile.putraprima.id/, berikut ini raw json hasil requestnya :
 
 ```json
 {
