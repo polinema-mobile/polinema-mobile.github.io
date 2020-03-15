@@ -1,0 +1,27 @@
+{
+  "name": "polinema-mobile.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "gitbook serve",
+    "build": "gitbook build",
+    "book": "gitbook pdf"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/polinema-mobile/polinema-mobile.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "canvas": "^2.6.1",
+    "gitbook": "git+https://github.com/dhanifudin/gitbook.git",
+    "gitbook-cli": "^2.3.2"
+  },
+  "bugs": {
+    "url": "https://github.com/polinema-mobile/polinema-mobile.github.io/issues"
+  },
+  "homepage": "https://github.com/polinema-mobile/polinema-mobile.github.io#readme"
+}

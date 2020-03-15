@@ -1,0 +1,1216 @@
+
+<!DOCTYPE HTML>
+<html lang="id" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Android Activity Lifecycle · Modul Pemrograman Mobile</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Tim Pengajar Pemrograman Mobile">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="02-linier-layout.html" />
+    
+    
+    <link rel="prev" href="00-pendahuluan.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Ketik untuk mencari" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Pemrograman Mobile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../01/00-pendahuluan.html">
+            
+                <a href="../01/00-pendahuluan.html">
+            
+                    
+                    1. Persiapan Android
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../01/01-android.html">
+            
+                <a href="../01/01-android.html">
+            
+                    
+                    Android
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../01/02-git.html">
+            
+                <a href="../01/02-git.html">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../01/03-instalasi-java-sdk.html">
+            
+                <a href="../01/03-instalasi-java-sdk.html">
+            
+                    
+                    Install Java SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../01/04-instalasi-android-studio.html">
+            
+                <a href="../01/04-instalasi-android-studio.html">
+            
+                    
+                    Instalasi Android Studio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../01/05-instalasi-emulator-android.html">
+            
+                <a href="../01/05-instalasi-emulator-android.html">
+            
+                    
+                    Instalasi Emulator Android
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../01/06-developer-options.html">
+            
+                <a href="../01/06-developer-options.html">
+            
+                    
+                    Developer Options
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../01/07-hello-android.html">
+            
+                <a href="../01/07-hello-android.html">
+            
+                    
+                    Hello Android
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../01/08-tugas.html">
+            
+                <a href="../01/08-tugas.html">
+            
+                    
+                    Tugas
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../02/00-pendahuluan.html">
+            
+                <a href="../02/00-pendahuluan.html">
+            
+                    
+                    2. Pengenalan Android Studio
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../02/01-tour-android-studio.html">
+            
+                <a href="../02/01-tour-android-studio.html">
+            
+                    
+                    Tour Android Studio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../02/02-struktur-folder-project-android-studio.html">
+            
+                <a href="../02/02-struktur-folder-project-android-studio.html">
+            
+                    
+                    Struktur Folder Project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../02/03-version-control.html">
+            
+                <a href="../02/03-version-control.html">
+            
+                    
+                    Version Control
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../02/04-tugas.html">
+            
+                <a href="../02/04-tugas.html">
+            
+                    
+                    Tugas
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="00-pendahuluan.html">
+            
+                <a href="00-pendahuluan.html">
+            
+                    
+                    3. Activity dan Desain Layout
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.4.1" data-path="01-android-activity-lifecycle.html">
+            
+                <a href="01-android-activity-lifecycle.html">
+            
+                    
+                    Android Activity Lifecycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="02-linier-layout.html">
+            
+                <a href="02-linier-layout.html">
+            
+                    
+                    Linear Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="03-relative-layout.html">
+            
+                <a href="03-relative-layout.html">
+            
+                    
+                    Relative Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="04-constraint-layout.html">
+            
+                <a href="04-constraint-layout.html">
+            
+                    
+                    Constraint Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="05-latihan-konversi-layout-1.html">
+            
+                <a href="05-latihan-konversi-layout-1.html">
+            
+                    
+                    Latihan Konversi Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="06-latihan-konversi-layout-2.html">
+            
+                <a href="06-latihan-konversi-layout-2.html">
+            
+                    
+                    Latihan Konversi Layout 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../04/00-pendahuluan.html">
+            
+                <a href="../04/00-pendahuluan.html">
+            
+                    
+                    4. Intent
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../04/01-intent.html">
+            
+                <a href="../04/01-intent.html">
+            
+                    
+                    Intent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../04/02-explicit-intent.html">
+            
+                <a href="../04/02-explicit-intent.html">
+            
+                    
+                    Explicit Intent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../04/03-implicit-intent.html">
+            
+                <a href="../04/03-implicit-intent.html">
+            
+                    
+                    Implicit Intent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../04/04-bundle.html">
+            
+                <a href="../04/04-bundle.html">
+            
+                    
+                    Android Bundle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../04/05-parcelable.html">
+            
+                <a href="../04/05-parcelable.html">
+            
+                    
+                    Parcelable
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../04/06-tugas.html">
+            
+                <a href="../04/06-tugas.html">
+            
+                    
+                    Tugas
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../05/00-pendahuluan.html">
+            
+                <a href="../05/00-pendahuluan.html">
+            
+                    
+                    5. Latihan Intent
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../05/01-latihan.html">
+            
+                <a href="../05/01-latihan.html">
+            
+                    
+                    Latihan 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../05/02-latihan.html">
+            
+                <a href="../05/02-latihan.html">
+            
+                    
+                    Latihan 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../06/00-pendahuluan.html">
+            
+                <a href="../06/00-pendahuluan.html">
+            
+                    
+                    6. RecyclerView
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../06/01-recyclerview.html">
+            
+                <a href="../06/01-recyclerview.html">
+            
+                    
+                    Konsep RecyclerView
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../06/02-recyclerview-sederhana.html">
+            
+                <a href="../06/02-recyclerview-sederhana.html">
+            
+                    
+                    RecyclerView Sederhana
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../06/03-praktikum-recyclerview.html">
+            
+                <a href="../06/03-praktikum-recyclerview.html">
+            
+                    
+                    Praktikum RecyclerView
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../06/04-grid-recyclerview.html">
+            
+                <a href="../06/04-grid-recyclerview.html">
+            
+                    
+                    Grid RecyclerView
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../06/05-viewtype-recyclerview.html">
+            
+                <a href="../06/05-viewtype-recyclerview.html">
+            
+                    
+                    ViewType RecyclerView
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../06/06-exercise.html">
+            
+                <a href="../06/06-exercise.html">
+            
+                    
+                    Latihan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../06/07-recyclerview-fastadapter.html">
+            
+                <a href="../06/07-recyclerview-fastadapter.html">
+            
+                    
+                    RecyclerView FastAdapter
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../07/00-pendahuluan.html">
+            
+                <a href="../07/00-pendahuluan.html">
+            
+                    
+                    7. Interaksi RecyclerView
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../07/01-aplikasi.html">
+            
+                <a href="../07/01-aplikasi.html">
+            
+                    
+                    Aplikasi Kas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../07/02-recyclerview-adapter.html">
+            
+                <a href="../07/02-recyclerview-adapter.html">
+            
+                    
+                    RecyclerView Adapter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../07/03-saveactivity.html">
+            
+                <a href="../07/03-saveactivity.html">
+            
+                    
+                    SaveActivity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../07/04-mainactivity.html">
+            
+                <a href="../07/04-mainactivity.html">
+            
+                    
+                    MainActivity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../07/05-mainactivity-add.html">
+            
+                <a href="../07/05-mainactivity-add.html">
+            
+                    
+                    MainActivity Add
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../07/06-mainactivity-update.html">
+            
+                <a href="../07/06-mainactivity-update.html">
+            
+                    
+                    MainActivity Update
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../07/07-mainactivity-delete.html">
+            
+                <a href="../07/07-mainactivity-delete.html">
+            
+                    
+                    MainActivity Delete
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="../07/08-tugas.html">
+            
+                <a href="../07/08-tugas.html">
+            
+                    
+                    Tugas
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../08/00-pendahuluan.html">
+            
+                <a href="../08/00-pendahuluan.html">
+            
+                    
+                    8. SharedPreference
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../08/01-shared-preference.html">
+            
+                <a href="../08/01-shared-preference.html">
+            
+                    
+                    SharedPreference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../08/02-login.html">
+            
+                <a href="../08/02-login.html">
+            
+                    
+                    Login
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../08/03-settings.html">
+            
+                <a href="../08/03-settings.html">
+            
+                    
+                    Settings
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../09/00-pendahuluan.html">
+            
+                <a href="../09/00-pendahuluan.html">
+            
+                    
+                    9. Retrofit
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../09/01-retrofit-get.html">
+            
+                <a href="../09/01-retrofit-get.html">
+            
+                    
+                    Retrofit GET
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../09/02-retrofit-get-tugas.html">
+            
+                <a href="../09/02-retrofit-get-tugas.html">
+            
+                    
+                    Latihan Retrofit GET
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../09/03-retrofit-post.html">
+            
+                <a href="../09/03-retrofit-post.html">
+            
+                    
+                    Retrofit POST
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../09/04-retrofit-post-tugas.md">
+            
+                <span>
+            
+                    
+                    Latihan Retrofit POST
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Dipublikasikan dengan GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Android Activity Lifecycle</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="activity">Activity</h1>
+<h2 id="pengertian-activity">Pengertian Activity</h2>
+<p>Activity adalah:</p>
+<ul>
+<li>Komponen yang menampilkan dan mengatur halaman aplikasi sebagai tempat
+interaksi antara pengguna dengan aplikasi Android.</li>
+<li>Class MainActivity secara otomatis akan ter-generate ketika membuat suatu
+project. Class tersebut merupakan extends dari Class Activity.</li>
+<li><p>Terdapat dua method yang pasti dimiliki oleh satu activity, yaitu:</p>
+</li>
+<li><p><strong>onCreate()</strong>. Untuk menginisiasi/membuat suatu activity</p>
+</li>
+<li><p><strong>onPause()</strong>. Untuk menyatakan ketika user meninggalkan suau activity.</p>
+</li>
+<li><p>Untuk menghubungkan Activity dengan tampilan yang telah dibentuk pada xml,
+digunakan fungsi <strong>setContentView()</strong>.</p>
+</li>
+<li>Untuk memanggil widget pada activity digunakan fungsi <strong>findViewById()</strong>.</li>
+</ul>
+<h2 id="cara-membuat-activity">Cara Membuat Activity</h2>
+<p>Untuk membuat activity dapat dilakukan secara manual atau menggunakan template
+yang disediakan oleh android studio. Berikut ini langkah langkah untuk membuat
+sebuah activity.</p>
+<ol>
+<li>Klik kanan pada package yang ada pada new project kemudian pada menu yang ada
+pilih menu <code>activity</code> kemudian pada pilihan template pilihlah <code>empty activity</code></li>
+</ol>
+<p><img src="images/02-create-activity.png" alt="create activity"></p>
+<ol>
+<li>Kemudian pada dialog yang muncul isikan nama activity yang akan anda buat,
+pada screenshot ini dibuat sebuah activity dengan nama <code>Next Activity</code></li>
+</ol>
+<p><img src="images/02-create-activity-step2.png" alt="next activity"></p>
+<ol>
+<li>Klik finish, ketika anda meng klik tombol finish Android Studio melakukan
+finalisasi pembuatan activity dengan melengkapi activity tersebut dengan
+sebuah file template xml dan mendaftarkannya ke Android Manifest.</li>
+</ol>
+<p><img src="images/02-create-activity-step3.png" alt="next activity"></p>
+<ol>
+<li>Hasil android manifest yang sudah berubah dapat dilihat pada gambar dibawah ini</li>
+</ol>
+<p><img src="images/02-create-activity-step4.png" alt="next activity"></p>
+<ol>
+<li>Jika anda ingin membuat sebuah activity tanpa mengikuti template yang
+disediakan android studio dapat dilakukan dengan melakukan langkah langkah di
+atas secara manual, mulai dari membuat sebuah class yang mengextend class
+<code>AppCompatActivity</code> kemudian membuat sebuah layout xml dan memanggilnya pada
+fungsi <code>onCreate()</code> di activity yang dibuat dan langkah terakhir adalah
+mendaftarkan activity tersebut ke Android Manifest.</li>
+</ol>
+<h2 id="activity-life-cycle-daur-hidup-activity">Activity Life Cycle (Daur Hidup Activity)</h2>
+<ul>
+<li>Activity aplikasi android dikelola dengan sistem &#x201C;activity stack&#x201D; (antrian
+bertumpuk).</li>
+<li>Ketika suatu activity dinyatakan &#x201C;start&#x201D; maka activity tersebut terletak di
+atas dari activity-activity yang telah berjalan pada &#x201C;activity stack&#x201D;. Keadaan
+tersebut bertahan hingga muncul suatu activity baru.</li>
+<li><p>Empat keadaan yang dimiliki activity, yaitu:</p>
+</li>
+<li><p><strong>Active/running</strong>: Jika activity tersebut berada pada posisi atas
+&#x201C;stack activity&#x201D;.</p>
+</li>
+<li><strong>Paused</strong>: Jika activity tersebut tidak dipakai atau akan dibutuhkan
+pada suatu saat tertentu namun, activity itu masih ada atau visible.
+Activity yang berada pada keadaan &#x201C;pause&#x201D; masih tersimpan pada memory.
+Namun jika memori telah penuh bias saja activity tersebut terhapus.</li>
+<li><strong>Stopped</strong>: Jika activity sudah tidak dipakai dan digantikan oleh
+activity lain. Activity yang telah &#x201C;stopped&#x201D; tidak akan dipanggil lagi,
+dan memori akan menghapus segala informasi mengenai activity tersebut.</li>
+<li><strong>Restart</strong>: Jika activity &#x201C;paused&#x201D; atau &#x201C;stopped&#x201D;, sistem dapat
+menghapus activity ini dari memory, dan ketika activity ini dibutuhkan
+dan dipanggil kembali maka, activity akan kembali ke keadaan awal
+(restart).</li>
+</ul>
+<p><img src="images/life_cyccle_activity.png" alt="activity1"></p>
+<h2 id="praktikum">Praktikum</h2>
+<ol>
+<li><p>Bukalah tautan <a href="https://github.com/polinema-mobile/2019-mobile02" target="_blank">Starter Code</a> berikut.</p>
+</li>
+<li><p>Perhatikan pada pojok kanan atas halaman GitHub, terdapat tombol
+<img src="images/fork.png" alt="Fork">. Lakukan proses fork repository dengan menekan
+tombol Fork, tunggu hingga proses selesai.</p>
+<blockquote>
+<p><strong>Catatan</strong>: Fork adalah proses untuk menyalin repository dari repository
+kepemilikan seseorang ke repository sendiri. Fork biasanya digunakan untuk
+berkontribusi ke repository orang lain atau menjadikannya sebagai starter
+code.</p>
+</blockquote>
+</li>
+<li><p>Jika proses fork telah selesai, maka anda akan mempunyai salinan repository
+pada akun GitHub anda.</p>
+</li>
+</ol>
+<p><img src="images/forked-repository.png" alt="Forked Repository"></p>
+<ol>
+<li>Lakukan proses clone dengan menyalin url repository fork. Pastikan url
+menggunakan username akun GitHub anda.</li>
+</ol>
+<p><img src="images/clone.png" alt="Clone Repository"></p>
+<ol>
+<li>Buka aplikasi terminal atau cmd, jalankan perintah clone dengan git. Contoh:</li>
+</ol>
+<pre><code>git clone https://github.com/&lt;username&gt;/2019-mobile02
+</code></pre><blockquote>
+<p><strong>Catatan</strong>: Ubah <code>&lt;username&gt;</code> dengan akun GitHub anda.</p>
+</blockquote>
+<ol>
+<li><p>Dalam starter code terdapat dua project Android, bukalah project
+<strong>AndroidLifecycle</strong> dengan menggunakan menu <strong>Open</strong> dari Android Studio.
+Tunggu hingga proses build selesai.</p>
+</li>
+<li><p>Pada project Android secara otomatis akan dibuatkan Activity utama dengan
+nama <code>MainActivity</code> yang didefinisikan dalam <code>MainActivity.java</code> serta
+<code>activity_main.xml</code> untuk pengaturan layoutnya. Selain itu, pada Activity
+dibuatkan juga default callback <code>onCreate()</code>.</p>
+</li>
+<li><p>Untuk memahami lebih lanjut mengenai lifecycle pada Android, tambahkan dua
+callback <code>onStart()</code> dan juga <code>onStop()</code> dengan <em>override</em>. Sehingga hasil
+akhir menjadi seperti pada gambar berikut.</p>
+</li>
+</ol>
+<p><img src="images/activity1.jpg" alt="activity1"></p>
+<blockquote>
+<p><strong>Tips</strong>: Untuk melakukan <em>override</em> anda dapat menggunakan shortcut <code>Ctrl + o</code>
+kemudian pilih nama method yang akan di-<em>override</em>. Atau anda dapat
+langsung mengetikkan nama method yang akan di-<em>override</em> kemudian dilanjutkan
+dengan <code>Ctrl + space</code> dan <code>Enter</code>. Contoh: <code>onSt Ctrl + space</code> akan muncul suggestion
+<code>onStart()</code></p>
+<p><strong>Catatan</strong>: <code>Toast</code> digunakan untuk menampilkan pesan pop up pada Android.
+<code>Toast.LENGTH_SHORT</code> mengatur berapa lama pesan pop up akan ditampilkan.
+Secara umum struktur code Toast sebagai berikut.</p>
+<pre><code class="lang-java">Toast.makeText(<span class="hljs-keyword">this</span>, <span class="hljs-string">&quot;This is a message&quot;</span>, Toast.LENGTH_SHORT).show();
+</code></pre>
+</blockquote>
+<ol>
+<li><p>Jalankan kode tersebut.</p>
+</li>
+<li><p>Perhatikan tampilan <em>pop up</em> yang keluar ketika aplikasi dijalankan.</p>
+</li>
+<li><p>Lengkapi kode seperti gambar berikut kemudian jalankan kembali.</p>
+</li>
+</ol>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MainActivity</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">AppCompatActivity</span> </span>{
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(Bundle savedInstanceState)</span> </span>{
+        <span class="hljs-keyword">super</span>.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onStart</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">super</span>.onStart();
+        Toast.makeText(<span class="hljs-keyword">this</span>, <span class="hljs-string">&quot;Application On Start&quot;</span>, Toast.LENGTH_SHORT).show();
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onStop</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">super</span>.onStop();
+        Toast.makeText(<span class="hljs-keyword">this</span>, <span class="hljs-string">&quot;Application On Stop&quot;</span>, Toast.LENGTH_SHORT).show();
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onRestart</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">super</span>.onRestart();
+        Toast.makeText(<span class="hljs-keyword">this</span>, <span class="hljs-string">&quot;Application On Restart&quot;</span>, Toast.LENGTH_SHORT).show();
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onResume</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">super</span>.onResume();
+        Toast.makeText(<span class="hljs-keyword">this</span>, <span class="hljs-string">&quot;Application On Resume&quot;</span>, Toast.LENGTH_SHORT).show();
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onPause</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">super</span>.onPause();
+        Toast.makeText(<span class="hljs-keyword">this</span>, <span class="hljs-string">&quot;Application On Pause&quot;</span>, Toast.LENGTH_SHORT).show();
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onDestroy</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">super</span>.onDestroy();
+        Toast.makeText(<span class="hljs-keyword">this</span>, <span class="hljs-string">&quot;Application On Destroy&quot;</span>, Toast.LENGTH_SHORT).show();
+    }
+}
+</code></pre>
+<ol>
+<li>Tambahkan semua perubahan ke dalam repository dengan git. Kemudian commit
+dan push ke repository GitHub anda.</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> hasil yang cocok "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">Tidak ada hasil yang cocok "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="00-pendahuluan.html" class="navigation navigation-prev " aria-label="Previous page: 3. Activity dan Desain Layout">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="02-linier-layout.html" class="navigation navigation-next " aria-label="Next page: Linear Layout">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Android Activity Lifecycle","level":"1.4.1","depth":2,"next":{"title":"Linear Layout","level":"1.4.2","depth":2,"path":"03/02-linier-layout.md","ref":"03/02-linier-layout.md","articles":[]},"previous":{"title":"3. Activity dan Desain Layout","level":"1.4","depth":1,"path":"03/00-pendahuluan.md","ref":"03/00-pendahuluan.md","articles":[{"title":"Android Activity Lifecycle","level":"1.4.1","depth":2,"path":"03/01-android-activity-lifecycle.md","ref":"03/01-android-activity-lifecycle.md","articles":[]},{"title":"Linear Layout","level":"1.4.2","depth":2,"path":"03/02-linier-layout.md","ref":"03/02-linier-layout.md","articles":[]},{"title":"Relative Layout","level":"1.4.3","depth":2,"path":"03/03-relative-layout.md","ref":"03/03-relative-layout.md","articles":[]},{"title":"Constraint Layout","level":"1.4.4","depth":2,"path":"03/04-constraint-layout.md","ref":"03/04-constraint-layout.md","articles":[]},{"title":"Latihan Konversi Layout","level":"1.4.5","depth":2,"path":"03/05-latihan-konversi-layout-1.md","ref":"03/05-latihan-konversi-layout-1.md","articles":[]},{"title":"Latihan Konversi Layout 2","level":"1.4.6","depth":2,"path":"03/06-latihan-konversi-layout-2.md","ref":"03/06-latihan-konversi-layout-2.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Tim Pengajar Pemrograman Mobile","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Modul Pemrograman Mobile","language":"id","gitbook":"*"},"file":{"path":"03/01-android-activity-lifecycle.md","mtime":"2020-03-15T12:59:35.572Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-15T13:00:39.003Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
