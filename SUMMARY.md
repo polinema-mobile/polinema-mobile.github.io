@@ -69,6 +69,6 @@
 
 - [9. Retrofit](09/00-pendahuluan.md)
   - [Retrofit GET](09/01-retrofit-get.md)
-  - [Latihan Retrofit GET](09/02-retrofit-tugas.md)
-  - [Retrofit POST](09/02-retrofit-tugas.md)
-  - [Latihan Retrofit POST](09/02-retrofit-tugas.md)
+  - [Latihan Retrofit GET](09/02-retrofit-get-tugas.md)
+  - [Retrofit POST](09/03-retrofit-post.md)
+  - [Latihan Retrofit POST](09/04-retrofit-post-tugas.md)
