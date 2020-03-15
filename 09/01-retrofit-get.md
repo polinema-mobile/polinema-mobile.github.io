@@ -176,3 +176,45 @@ Kode program diatas adalah hasil mapping dari response json yang di request ke e
 ```
 
 Perhatikan cara mapping dari json ke class model.
+
+### ApiInterface
+
+Daftar endpoint yang diakses dan method yang digunakan serta parameter yang dikirim untuk mengakses endpoit di daftarkan pada file ini, perhatikanlah dengan seksama kode program berikut ini :
+
+```java
+public interface ApiInterface{
+    @GET("/")
+    Call<AppVersion> getAppVersion();
+}
+```
+
+Pada interface di atas terdapat sebuah annotation @GET("/") ini menunjukkan bahwa method getAppVersion digunakan untuk mengakses endpoint "/" dan menggunakan class AppVersion sebagai class model datanya.
+
+### SplashActivity
+
+Pada splash activity digunakan semua class yang dibuat sebelumnya untuk mengakses endpoint "/", perhatikan fungsi berikut yang ada pada starter code :
+
+```java
+    private void checkAppVersion() {
+        ApiInterface service = ServiceGenerator.createService(ApiInterface.class);
+        Call<AppVersion> call = service.getAppVersion();
+        call.enqueue(new Callback<AppVersion>() {
+            @Override
+            public void onResponse(Call<AppVersion> call, Response<AppVersion> response) {
+                Toast.makeText(SplashActivity.this, response.body().getApp(), Toast.LENGTH_SHORT).show();
+                //Todo : 2. Implementasikan Proses Simpan Data Yang didapat dari Server ke SharedPreferences
+                //Todo : 3. Implementasikan Proses Pindah Ke MainActivity Jika Proses getAppVersion() sukses
+                Intent i = new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(i);
+            }
+
+            @Override
+            public void onFailure(Call<AppVersion> call, Throwable t) {
+                Toast.makeText(SplashActivity.this, "Gagal Koneksi Ke Server", Toast.LENGTH_SHORT).show();
+                //Todo : 4. Implementasikan Cara Notifikasi Ke user jika terjadi kegagalan koneksi ke server silahkan googling cara yang lain selain menggunakan TOAST
+            }
+        });
+    }
+```
+
+Kode program diatas di instansiasi kan service generator untuk call retrofit, kemudian pada proses call digunakan callback yang dipanggil secara asynchronous.
