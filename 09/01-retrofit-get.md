@@ -136,7 +136,7 @@ Class ini adalah class yang berfungsi melakukan generate terhadap service endpoi
 
 ### AppVersion
 
-Berikut ini kode program AppVersion.java
+Berikut ini kode program AppVersion.java, file ini adalah model dari endpoint yang diakses.
 
 ```java
 public class AppVersion {
@@ -188,7 +188,8 @@ public interface ApiInterface{
 }
 ```
 
-Pada interface di atas terdapat sebuah annotation @GET("/") ini menunjukkan bahwa method getAppVersion digunakan untuk mengakses endpoint "/" dan menggunakan class AppVersion sebagai class model datanya.
+Pada interface di atas terdapat sebuah annotation @GET("/") ini menunjukkan bahwa method getAppVersion digunakan untuk mengakses endpoint "/" menggunakan HTTP verb GET dan menggunakan class AppVersion sebagai class model datanya.
+Pada ApiInterface ini anda dapat menambahkan endpoint lain sesuai kebutuhan dan sesuai dengan HTTP verb nya, untuk memahami HTTP verb dan kegunaannya dalam pembuatan endpoint dapat anda baca lebih lanjut pada [tutorial berikut ini]().
 
 ### SplashActivity
 
