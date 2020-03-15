@@ -36,10 +36,12 @@
   - [Parcelable](04/05-parcelable.md)
   - [Tugas](04/06-tugas.md)
 - [5. Latihan Intent](05/00-pendahuluan.md)
+
   - [Latihan 1](05/01-latihan.md)
   - [Latihan 2](05/02-latihan.md)
 
 - [6. RecyclerView](06/00-pendahuluan.md)
+
   - [Konsep RecyclerView](06/01-recyclerview.md)
   - [RecyclerView Sederhana](06/02-recyclerview-sederhana.md)
   - [Praktikum RecyclerView](06/03-praktikum-recyclerview.md)
@@ -49,6 +51,7 @@
   - [RecyclerView FastAdapter](06/07-recyclerview-fastadapter.md)
 
 - [7. Interaksi RecyclerView](07/00-pendahuluan.md)
+
   - [Aplikasi Kas](07/01-aplikasi.md)
   - [RecyclerView Adapter](07/02-recyclerview-adapter.md)
   - [SaveActivity](07/03-saveactivity.md)
@@ -59,6 +62,13 @@
   - [Tugas](07/08-tugas.md)
 
 - [8. SharedPreference](08/00-pendahuluan.md)
+
   - [SharedPreference](08/01-shared-preference.md)
   - [Login](08/02-login.md)
   - [Settings](08/03-settings.md)
+
+- [9. Retrofit](09/00-pendahuluan.md)
+  - [Retrofit GET](09/01-retrofit-get.md)
+  - [Latihan Retrofit GET](09/02-retrofit-tugas.md)
+  - [Retrofit POST](09/02-retrofit-tugas.md)
+  - [Latihan Retrofit POST](09/02-retrofit-tugas.md)
